@@ -6,7 +6,15 @@ Args:
 Return: 
   Int: answer
 */
-  return 0;
+  int sum = 0;
+  for (int i = 0; i < numbers.length; i += 1) {
+    if (numbers[i] % 2 == 1) {
+      sum += numbers[i];
+    }
+  }
+  return sum;
 }
 
-void main() {}
+void main() {
+  print(func([2, 2, 2, 4, 2]));
+}
